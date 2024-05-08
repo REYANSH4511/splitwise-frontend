@@ -84,7 +84,7 @@ export default function ButtonAppBar() {
               <Button variant="outlined" color="inherit">
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
-                  to="/login"
+                  to="/"
                 >
                   Login
                 </Link>
