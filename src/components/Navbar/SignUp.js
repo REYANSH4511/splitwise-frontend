@@ -187,16 +187,7 @@ export default function SignUp() {
                   type="number"
                   value={formData.mobile}
                   onChange={handleChange}
-                  InputProps={{
-                    inputProps: {
-                      min: 0,
-                      onKeyDown: (e) => {
-                        if (e.key === "-" || "." || "," || "+") {
-                          e.preventDefault();
-                        }
-                      },
-                    },
-                  }}
+                
                 />
               </Grid>
               <Grid item xs={12}>

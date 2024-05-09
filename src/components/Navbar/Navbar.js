@@ -48,7 +48,7 @@ export default function ButtonAppBar() {
     localStorage.removeItem("userData");
     localStorage.removeItem("isLoggedIn");
     setAnchorEl(null);
-    navigate("/login");
+    navigate("/");
   };
 
   const userDataString = localStorage.getItem("userData");
