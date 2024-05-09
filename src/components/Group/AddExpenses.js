@@ -12,7 +12,7 @@ import {
   Select,
   MenuItem,
   Box,
-} from "@material-ui/core";
+} from "@mui/material";
 import PropTypes from "prop-types";
 import "./createGroup.css";
 import NoteAddIcon from "@mui/icons-material/NoteAdd";

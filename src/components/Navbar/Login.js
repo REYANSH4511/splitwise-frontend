@@ -16,8 +16,8 @@ import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import IconButton from "@material-ui/core/IconButton";
+import InputAdornment from "@mui/material/InputAdornment";
+import IconButton from "@mui/material/IconButton";
 import { userApi } from "../../api";
 
 function Copyright(props) {
@@ -53,7 +53,7 @@ export default function SignIn() {
   useEffect(() => {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
     if (isLoggedIn === "true") {
-      navigate("/createGroup");
+      navigate("/groupList");
     }
   }, []);
 
@@ -72,8 +72,6 @@ export default function SignIn() {
     userApi
       .login(obj)
       .then((res) => {
-        console.log("Response:", res);
-
         localStorage.setItem("userData", JSON.stringify(res.data));
         localStorage.setItem("isLoggedIn", "true");
 
